@@ -86,6 +86,13 @@ class NavDrawer extends StatelessWidget {
                   _buildDivider(),
                   _buildRow(Icons.movie, "Upcoming Movie", showBadge: true),
                   _buildDivider(),
+                  // _buildRow(Icons.people_sharp, "Tranding People",
+                  //     showBadge: false),
+                  // _buildDivider(),
+                  _buildRow(
+                      Icons.star_border_purple500_rounded, "Top Rate Movie",
+                      showBadge: false),
+                  _buildDivider(),
                   _buildRow(Icons.person_pin, "Profile"),
                   _buildDivider(),
                   _buildRow(Icons.settings, "Settings"),
@@ -184,6 +191,14 @@ class NavDrawer extends StatelessWidget {
       case "Upcoming Movie":
         navigationPush(
             _context, MovieListScreen(apiName: ApiConstant.UPCOMING_MOVIE));
+        break;
+      // case "Tranding People":
+      //   navigationPush(
+      //       _context, MovieListScreen(apiName: ApiConstant.trendingpersons));
+      //   break;
+      case "Top Rate Movie":
+        navigationPush(
+            _context, MovieListScreen(apiName: ApiConstant.TOP_RATED));
         break;
       case "Profile":
         navigationStateLessPush(_context, ProfileScreen());

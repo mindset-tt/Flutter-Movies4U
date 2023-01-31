@@ -127,7 +127,7 @@ class UserInfo extends StatelessWidget {
                             title: getTxt(msg: "About Us"),
                             subtitle: getTxt(
                                 msg:
-                                    " This is a about Us link and you can khow about me in this section."),
+                                    "We are the part of students in National University of Laos, This Project we have inspiration from Deepak Sharma on Github. Thank you for seeing this project."),
                           ),
                         ],
                       ),
